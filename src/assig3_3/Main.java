@@ -23,8 +23,6 @@ public class Main {
         s.start();
 
         while (machine.getNumOfPreparedSalads() < numOfSaladsToPrepare) {
-            // no busy waiting sleep needed here, but this loop is still polling
-            // we keep it simple, and the workers are efficiently waiting inside the machine
             Thread.yield();
         }
 
