@@ -40,7 +40,7 @@ public class Main {
             Thread.currentThread().interrupt();
         }
 
-        System.out.println("Done");
+        System.out.println("Done.");
         scan.close();
     }
 }
